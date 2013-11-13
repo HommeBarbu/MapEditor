@@ -92,4 +92,22 @@ def load_unit_tiles():
     tile_start += 1
     tile_dict['enemy5'] = SpriteHandler('UnitTiles.png').get_tile_at(
         pygame.Rect(Constants.TILE_WIDTH * tile_start, 0, Constants.TILE_WIDTH, Constants.TILE_HEIGHT))
+    tile_start = 0
+    tile_dict['obstacle1'] = SpriteHandler('ObstacleTiles.png').get_tile_at(
+        pygame.Rect(Constants.TILE_WIDTH * tile_start, 0, Constants.TILE_WIDTH, Constants.TILE_HEIGHT))
+    tile_start += 1
+    tile_dict['obstacle2'] = SpriteHandler('ObstacleTiles.png').get_tile_at(
+        pygame.Rect(Constants.TILE_WIDTH * tile_start, 0, Constants.TILE_WIDTH, Constants.TILE_HEIGHT))
+    tile_start += 1
+    tile_dict['obstacle3'] = SpriteHandler('ObstacleTiles.png').get_tile_at(
+        pygame.Rect(Constants.TILE_WIDTH * tile_start, 0, Constants.TILE_WIDTH, Constants.TILE_HEIGHT))
+    tile_start += 1
+    tile_dict['obstacle4'] = SpriteHandler('ObstacleTiles.png').get_tile_at(
+        pygame.Rect(Constants.TILE_WIDTH * tile_start, 0, Constants.TILE_WIDTH, Constants.TILE_HEIGHT))
+    tile_start += 1
+    tile_dict['obstacle5'] = SpriteHandler('ObstacleTiles.png').get_tile_at(
+        pygame.Rect(Constants.TILE_WIDTH * tile_start, 0, Constants.TILE_WIDTH, Constants.TILE_HEIGHT))
+    tile_start += 1
+    tile_dict['obstacle6'] = SpriteHandler('ObstacleTiles.png').get_tile_at(
+        pygame.Rect(Constants.TILE_WIDTH * tile_start, 0, Constants.TILE_WIDTH, Constants.TILE_HEIGHT))
     return tile_dict

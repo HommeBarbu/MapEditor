@@ -8,33 +8,48 @@ class KeypressHandler:
 
 def tile_press_handler(key):
     if key == pygame.K_q:
-        return 'asphalt', 'map'
+        return 'map', 'asphalt', True
     if key == pygame.K_w:
-        return 'water', 'map'
+        return 'map', 'water', True
     if key == pygame.K_e:
-        return 'grass', 'map'
-    if key == pygame.K_a:
-        return 'earth', 'map'
-    if key == pygame.K_s:
-        return 'lava', 'map'
-    if key == pygame.K_d:
-        return 'sand', 'map'
-    if key == pygame.K_x:
-        return 'delete', 'map'
+        return 'map', 'grass', True
+    if key == pygame.K_r:
+        return 'map', 'earth', True
+    if key == pygame.K_t:
+        return 'map', 'lava', True
+    if key == pygame.K_y:
+        return 'map', 'sand', True
+    if key == pygame.K_u:
+        return 'map', 'delete', True
     if key == pygame.K_1:
-        return 'hero', 'unit'
+        return 'unit', 'hero', False
     if key == pygame.K_2:
-        return 'enemy1', 'unit'
+        return 'unit', 'enemy1', False
     if key == pygame.K_3:
-        return 'enemy2', 'unit'
+        return 'unit', 'enemy2', False
     if key == pygame.K_4:
-        return 'enemy3', 'unit'
+        return 'unit', 'enemy3', False
     if key == pygame.K_5:
-        return 'enemy4', 'unit'
+        return 'unit', 'enemy4', False
     if key == pygame.K_6:
-        return 'enemy5', 'unit'
+        return 'unit', 'enemy5', False
     if key == pygame.K_0:
-        return 'delete', 'unit'
+        return 'unit', 'delete', False
+    if key == pygame.K_a:
+        return 'unit', 'obstacle1', False
+    if key == pygame.K_s:
+        return 'unit', 'obstacle2', False
+    if key == pygame.K_d:
+        return 'unit', 'obstacle3', False
+    if key == pygame.K_f:
+        return 'unit', 'obstacle4', False
+    if key == pygame.K_g:
+        return 'unit', 'obstacle5', False
+    if key == pygame.K_h:
+        return 'unit', 'obstacle6', False
+    if key == pygame.K_j:
+        return 'unit', 'delete', False
+
 
 def clear_press_handler(key):
     if key == pygame.K_SPACE:
